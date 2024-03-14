@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-// ['C is fun', 'Python is cool', 'JavaScript is amazing'].forEach((e) => console.log(e));
+const myArr = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-const msg = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
-
-msg.forEach((element) => console.log(element));
+for (let i = 0; i < myArr.length; i++) {
+  console.log(myArr[i]);
+}

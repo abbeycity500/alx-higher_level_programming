@@ -1,7 +1,11 @@
 #!/usr/bin/node
-const { argv } = require('process');
-let len = 0;
 
-argv.forEach(() => len++);
+// import built-in module "process"
+const process = require('process');
 
-console.log(len === 2 ? 'No argument' : argv[2]);
+const valueArgs = process.argv;
+if (valueArgs[2]) {
+  console.log(valueArgs[2]);
+} else {
+  console.log('No argument');
+}
